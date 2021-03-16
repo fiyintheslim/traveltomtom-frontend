@@ -1,0 +1,169 @@
+.filters{
+    
+    position:fixed;
+    top:0px;
+    left:0px;
+    overflow: auto;
+    display:none;
+    flex-direction: column;
+    background:rgb(182, 181, 181);
+    background-color: #f7f2f2;
+    width: 37%;
+    height: 100%;
+    padding: 20px;
+    z-index: 10;
+    font-size: 17px;
+    
+    box-shadow: -9px 1px 11px rgb(46, 40, 40, 0.5);
+
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    
+}
+@keyframes show{
+    from{
+        transform: translateX(-900px);
+
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes hidden{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-900px);
+       
+    }
+}
+.filter-group{
+    display:flex;
+    flex-direction: column;
+    background-color: #1b1919;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.filter-group-2{
+    background-color: #1b1919;
+    padding: 4px;
+    border-radius: 20px;
+}
+.filter-group-label{
+    text-align: center;
+    width: 220px;
+    background-color: #252525;
+    border-radius:10px ;
+}
+.filter{
+    
+}
+
+div .c12{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    width: 100%;
+}
+.c8{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+}
+.c5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 50%;
+
+}
+div .c3{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    font-size: 17px;
+   
+}
+div .c2{
+    display: flex;
+    flex-direction: row;
+    margin:8px 0px;
+}
+.antarctica{
+    background-color: #1b1919;
+    border-radius: 10px;
+}
+
+.grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+    width: 100%;
+}
+.grid-2-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.choice{
+    
+    width:100%;
+    height: 50px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px rgb(46, 44, 44) solid;
+    border-radius: 6px;
+}
+.choice:hover{
+    background-color:rgb(68, 67, 67);
+    cursor: pointer;
+    
+}
+.to{
+    background-color:#221f1f;
+    padding: 2px;
+    text-align: center;
+    
+    text-overflow: ellipsis;
+
+
+}
+
+.tooltip{
+    width: 100%;
+}
+
+.filter-group .c8{
+    border-radius: 10px;
+}
+.tootip-set span{
+    height: 17px;
+}
+
+.health, .how, .members-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 10px;
+}
+.timezone{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr)
+}
+.visa-for{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    background-color: #221f1f;
+    padding: 2px;
+    border: none;
+    text-align: center;
+}
+.region{
+    width: 100%;
+}
